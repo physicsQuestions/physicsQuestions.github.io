@@ -93,5 +93,5 @@ const myQuestions15 = [
       },
       correctAnswer: "d",
       picture: true
-    }
+    },
   ];
