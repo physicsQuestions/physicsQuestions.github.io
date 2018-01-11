@@ -12,7 +12,7 @@ const myReasons15 = [
       reason: "reason 4"
     },
     {
-      reason: '<img src="reason5.png" width="55%">'
+      reason: '<img src="chapter15/reason5.png" width="55%">'
     },
     {
       reason: "reason 6"

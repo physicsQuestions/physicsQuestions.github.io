@@ -48,31 +48,31 @@ const myQuestions15 = [
       picture: false
     },
     {
-      question: '<img src="question5.png" width="730px">',
+      question: '<img src="chapter15/question5.png" width="730px">',
       answers: {
-        a: '<img src="question5A.png" width= "330px" style="vertical-align: middle;">',
-        b: '<img src="question5B.png" width= "330px" style="vertical-align: middle;">',
-        c: '<img src="question5C.png" width= "330px" style="vertical-align: middle;">',
-        d: '<img src="question5D.png" width= "330px" style="vertical-align: middle;">',
-        e: '<img src="question5E.png" width= "330px" style="vertical-align: middle;">'
+        a: '<img src="chapter15/question5A.png" width= "330px" style="vertical-align: middle;">',
+        b: '<img src="chapter15/question5B.png" width= "330px" style="vertical-align: middle;">',
+        c: '<img src="chapter15/question5C.png" width= "330px" style="vertical-align: middle;">',
+        d: '<img src="chapter15/question5D.png" width= "330px" style="vertical-align: middle;">',
+        e: '<img src="chapter15/question5E.png" width= "330px" style="vertical-align: middle;">'
       },
       correctAnswer: "b",
       picture: true
     },
     {
-      question: '<img src="question6.png" width="730px">',
+      question: '<img src="chapter15/question6.png" width="730px">',
       answers: {
-        a: '<img src="question5A.png" width= "330px" style="vertical-align: middle;">',
-        b: '<img src="question5B.png" width= "330px" style="vertical-align: middle;">',
-        c: '<img src="question5C.png" width= "330px" style="vertical-align: middle;">',
-        d: '<img src="question5D.png" width= "330px" style="vertical-align: middle;">',
-        e: '<img src="question5E.png" width= "330px" style="vertical-align: middle;">'
+        a: '<img src="chapter15/question5A.png" width= "330px" style="vertical-align: middle;">',
+        b: '<img src="chapter15/question5B.png" width= "330px" style="vertical-align: middle;">',
+        c: '<img src="chapter15/question5C.png" width= "330px" style="vertical-align: middle;">',
+        d: '<img src="chapter15/question5D.png" width= "330px" style="vertical-align: middle;">',
+        e: '<img src="chapter15/question5E.png" width= "330px" style="vertical-align: middle;">'
       },
       correctAnswer: "b",
       picture: true
     },
     {
-      question: '<img src="question7.png" width="730px"> <br> <img src="question7pt2.png" width ="330px">',
+      question: '<img src="chapter15/question7.png" width="730px"> <br> <img src="chapter15/question7pt2.png" width ="330px">',
       answers: {
         a: 'the frequency',
         b: 'the wave number',
@@ -84,12 +84,12 @@ const myQuestions15 = [
       picture: false
     },
     {
-      question: '<img src="question8.png" width="730px">',
+      question: '<img src="chapter15/question8.png" width="730px">',
       answers: {
         a: '<div style="display: inline-block;">We need to know the power P to answer</div>',
-        b: '<img src="question8B.png" width= "330px" style="vertical-align: middle;">',
-        c: '<img src="question8C.png" width= "330px" style="vertical-align: middle;">',
-        d: '<img src="question8D.png" width= "330px" style="vertical-align: middle;">'
+        b: '<img src="chapter15/question8B.png" width= "330px" style="vertical-align: middle;">',
+        c: '<img src="chapter15/question8C.png" width= "330px" style="vertical-align: middle;">',
+        d: '<img src="chapter15/question8D.png" width= "330px" style="vertical-align: middle;">'
       },
       correctAnswer: "d",
       picture: true
