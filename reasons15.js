@@ -22,5 +22,5 @@ const myReasons15 = [
     },
     {
       reason: "reason 8"
-    }
+    },
   ];
