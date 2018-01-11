@@ -1,0 +1,57 @@
+<head>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<h1>
+    <div style="padding-bottom: 25px">
+    <div style="position: absolute; left: 0px; width:100%">Physics Questions</div>
+    <a href= "options.html" id="setting" class="fa fa-cog" style="top: 20px; right: 20px; position: absolute; "></a>
+    </div>
+    
+</h1>
+<div class="quiz-container">
+  <div id="startingPage" class ="slide">
+  	<div id="left">
+  	<ul style="list-style-type:none">
+  		<li><button id="chapter15" class = "chapter" value = "15">Chapter 15</button></li>
+      <li class="scoreLi" id="score15Li" value = "0"><div class ="scoreDiv">
+      <p class="score" id="score15"> Best Score: 0%</p>
+      </div></li>
+  		<li><button id="chapter2" class = "chapter" value = "2">Chapter 2</button></li>
+  	</ul>
+  	</div>
+  	<div id="right">
+  	<ul style="list-style-type:none">
+  		<li><button id="chapter3" class = "chapter" value = "3"> Chapter 3</button></li>
+  </ul>
+  	</div>
+  </div>
+  <div id="quizSheet">
+    <div id="quiz">
+    </div>
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
+    <button id="submit">Submit Quiz</button>
+    <div id="results">
+    </div>
+    <br>
+    <button id="return"> Return to Menu</button>
+    <!--<button id="reason"> Reasoning</button>-->
+    <br>
+    <div id="explain" style="padding-bottom: 50px;"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script src="numberOfQuestions.js"></script>
+<script src="reasons15.js"></script>
+<script src="questions15.js"></script>
+<script src="questions2.js"></script>
+<script src="questions3.js"></script>
+<script src="FrontPageButton.js"></script>
+<script src="index.js"></script>
