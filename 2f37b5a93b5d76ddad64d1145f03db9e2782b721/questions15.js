@@ -14,6 +14,11 @@ const myQuestions15 = [
     {
       question: '<img src="chapter15/question1.jpg" width="730px">',
       answers: {
+        a,
+        b,
+        c,
+        d,
+        e,
       },
       correctAnswer: "c",
       picture: false
@@ -21,6 +26,11 @@ const myQuestions15 = [
     {
       question: '<img src="chapter15/question1.jpg" width="730px">',
       answers: {
+        a,
+        b,
+        c,
+        d,
+        e,
       },
       correctAnswer: "c",
       picture: false
