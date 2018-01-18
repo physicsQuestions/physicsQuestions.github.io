@@ -66,13 +66,12 @@
       for (letter in currentQuestion.answers) {
         // ...add an HTML radio button
         answers.push(
-          `<label style="text-align: left;">
+          `<label style="display: inline-block; text-align: center; padding-left:20px; padding-right: 20px">
              <input type="radio" class="${letter}" name="question${questionNumber}" value="${letter}">
              </input>
-              <span id="span${letter}" style="color:black;">
-              <span id="span${letter}color">${letter} : </span>
-              ${currentQuestion.answers[letter]}
-              </span>
+              <div id="span${letter}" style="color:black;">
+              ${letter}
+              </div>
            </label>`
         ); 
       }
@@ -121,12 +120,12 @@
         numCorrect++;
 
         // color the answer green
-        answerContainers[questionNumber].querySelector('#span' + currentQuestion.correctAnswer + 'color').style.color = 'lightgreen';
+        answerContainers[questionNumber].querySelector('#span' + currentQuestion.correctAnswer).style.color = 'lightgreen';
       } else {
         // if answer is wrong or blank
         // color the user answer red
         // color the correct answer green
-        answerContainers[questionNumber].querySelector('#span' + currentQuestion.correctAnswer + 'color').style.color = 'lightgreen';
+        answerContainers[questionNumber].querySelector('#span' + currentQuestion.correctAnswer).style.color = 'lightgreen';
         if(userAnswer != null) {
           answerContainers[questionNumber].querySelector('#span' + userAnswer).style.color = 'red';
         }

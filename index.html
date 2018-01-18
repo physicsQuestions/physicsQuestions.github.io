@@ -1,57 +1,134 @@
-<head>
-	<link rel="stylesheet" href="index.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<h1>
-    <div style="padding-bottom: 25px">
-    <div style="position: absolute; left: 0px; width:100%">Physics Questions</div>
-    <a href= "options.html" id="setting" class="fa fa-cog" style="top: 20px; right: 20px; position: absolute; "></a>
-    </div>
-    
-</h1>
-<div class="quiz-container">
-  <div id="startingPage" class ="slide">
-  	<div id="left">
-  	<ul style="list-style-type:none">
-  		<li><button id="chapter15" class = "chapter" value = "15">Chapter 15</button></li>
-      <li class="scoreLi" id="score15Li" value = "0"><div class ="scoreDiv">
-      <p class="score" id="score15"> Best Score: 0%</p>
-      </div></li>
-  		<li><button id="chapter2" class = "chapter" value = "2">Chapter 2</button></li>
-  	</ul>
-  	</div>
-  	<div id="right">
-  	<ul style="list-style-type:none">
-  		<li><button id="chapter3" class = "chapter" value = "3"> Chapter 3</button></li>
-  </ul>
-  	</div>
-  </div>
-  <div id="quizSheet">
-    <div id="quiz">
-    </div>
-    <button id="previous">Previous Question</button>
-    <button id="next">Next Question</button>
-    <button id="submit">Submit Quiz</button>
-    <div id="results">
-    </div>
-    <br>
-    <button id="return"> Return to Menu</button>
-    <!--<button id="reason"> Reasoning</button>-->
-    <br>
-    <div id="explain" style="padding-bottom: 50px;"></div>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<script src="numberOfQuestions.js"></script>
-<script src="reasons15.js"></script>
-<script src="questions15.js"></script>
-<script src="questions2.js"></script>
-<script src="questions3.js"></script>
-<script src="FrontPageButton.js"></script>
-<script src="index.js"></script>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+
+body {
+	
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
+}
+
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+	
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+::-moz-placeholder {  
+   color: #955;
+   text-align: center;
+}
+
+:-ms-input-placeholder {  
+   color: #955;
+   text-align: center;
+}
+
+</style>
+
+<body>
+	
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">				
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	 
+
+	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+		
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+			
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+			
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+	 
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+			
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+		
+	</script>
+
+</body>
+</html>
