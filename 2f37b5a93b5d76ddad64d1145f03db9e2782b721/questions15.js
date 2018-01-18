@@ -1,14 +1,9 @@
 const myQuestions15 = [
     {
-      question: "A wave has a period of 20 ms and a wavelength of 1 m. What is the wave speed?",
+      question: '<img src="chapter15/question1.jpg" width="730px">',
       answers: {
-        a: "50 m/s",
-        b: "20 m/s",
-        c: "6.28 m/s",
-        d: "0.05 m/s",
-        e: "0.02 m/s"
       },
-      correctAnswer: "a",
+      correctAnswer: "c",
       picture: false
     },
     {
